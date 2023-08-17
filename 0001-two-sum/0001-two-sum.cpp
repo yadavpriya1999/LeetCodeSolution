@@ -7,6 +7,7 @@ public:
             if(m.find(target-nums[i])!=m.end()){
                ans.push_back(m[target-nums[i]]);
                ans.push_back(i);
+                return ans;
             } 
               m[nums[i]]=i;
         }
